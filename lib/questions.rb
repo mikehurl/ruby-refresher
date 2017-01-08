@@ -293,4 +293,23 @@ end
 # at the end.
 # (there's no RSpec test for this one)
 def ninety_nine_bottles_of_beer
+  amount = 99
+  while amount > 0
+    if amount == 1
+      puts "1 bottle of beer on the wall, 1 bottle of beer"
+      puts "Take one down and pass it around"
+    else
+      puts "#{amount} bottles of beer on the wall, #{amount} bottles of beer"
+      puts "Take one down and pass it around,"
+    end
+    amount -= 1
+    if amount == 0
+      puts "No more bottles of beer on the wall!"
+    elsif amount == 1
+      puts "1 more bottle of beer on the wall!"
+    else
+      puts "#{amount} bottles of beer on the wall!"
+    end
+    puts "---"
+  end
 end
